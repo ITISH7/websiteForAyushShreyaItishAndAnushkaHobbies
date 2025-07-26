@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(46, 33%, 97%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(20, 70%, 27%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(25, 72%, 50%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(11, 100%, 60%);
+  --accent-foreground: hsl(60, 9.1%, 97.8%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  --nature: hsl(145, 54%, 35%);
+  --warm: hsl(28, 69%, 60%);
+  --cream: hsl(46, 33%, 97%);
+  --charcoal: hsl(0, 0%, 24%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(20, 70%, 27%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(11, 100%, 60%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-primary-brown {
+    color: hsl(20, 70%, 27%);
+  }
+  
+  .text-secondary-orange {
+    color: hsl(25, 72%, 50%);
+  }
+  
+  .text-accent-orange {
+    color: hsl(11, 100%, 60%);
+  }
+  
+  .text-nature-green {
+    color: hsl(145, 54%, 35%);
+  }
+  
+  .text-warm-tan {
+    color: hsl(28, 69%, 60%);
+  }
+  
+  .text-charcoal {
+    color: hsl(0, 0%, 24%);
+  }
+  
+  .bg-primary-brown {
+    background-color: hsl(20, 70%, 27%);
+  }
+  
+  .bg-secondary-orange {
+    background-color: hsl(25, 72%, 50%);
+  }
+  
+  .bg-accent-orange {
+    background-color: hsl(11, 100%, 60%);
+  }
+  
+  .bg-nature-green {
+    background-color: hsl(145, 54%, 35%);
+  }
+  
+  .bg-warm-tan {
+    background-color: hsl(28, 69%, 60%);
+  }
+  
+  .bg-cream {
+    background-color: hsl(46, 33%, 97%);
+  }
+  
+  .bg-charcoal {
+    background-color: hsl(0, 0%, 24%);
+  }
+}
